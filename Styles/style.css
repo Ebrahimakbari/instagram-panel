@@ -18,7 +18,7 @@ body{
 }
 
 .phone{
-    background-color: lightgray;
+    background-color: rgba(211, 211, 211, 0.404);
     width: 35%;
     margin: 0px auto;
     min-height: 100vh;
@@ -36,12 +36,17 @@ header .left{
 
 header .left span:nth-child(1){
     margin-left:10px ;
+    margin-bottom: 7px;
+    font-size: 1.5em;
+    align-self: center;
+}
+header .left span:nth-child(2){
+    margin-left:10px ;
     font-size: 2em;
 }
 
-header .left span:nth-child(2){
+header .left span:nth-child(3){
     font-size: 1.7em;
-    align-self: flex-end;
     margin-left: 5px;
 }
 
@@ -50,20 +55,144 @@ header .right{
     margin-right: 10px;
 }
 
+header .right i:nth-child(1){
+    margin: 0px 25px;
+}
+
+main section:nth-child(1){
+    display: flex;
+    justify-content: space-around;
+}
+
+main section:nth-child(1) .image img{
+    width: 160px;
+    border-radius: 50%;
+}
+
+main section:nth-child(1) .image{
+    position: relative;
+}
+
+main section:nth-child(1) .image i{
+    position: absolute;
+    bottom: 0px;
+    right: 4px;
+    font-size: 2.2em;
+    color: rgb(75, 127, 224);
+}
+
+main section:nth-child(1) .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+main section:nth-child(2) .information{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+    line-height: 35px;
+    font-size: 1.4em;
+}
+
+main section:nth-child(3) .edit .edit-links{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+main section:nth-child(3) .edit .edit-links span a{
+    color: black;
+    font-size: 1.3em;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    width: 240px;
+    padding: 5px;
+    border-radius: 11px;
+    background-color: rgba(131, 131, 131, 0.384);
+
+}
+
+.edit{
+    position: relative;
+}
+
+.add-mem{
+    position: absolute;
+    right: 30px;
+    top: 0px;
+    font-size: 1.5em;
+}
+.add-mem a i{
+    border-radius: 10px;
+    height: 35px;
+    text-align: center;
+    color: black;
+    background-color: rgba(131, 131, 131, 0.384);
+    width: 50px;
+    padding: 5px;
+}
+main section:nth-child(4) .story img{
+    width: 130px;
+    border-radius: 50%;
+    border: 5px solid rgba(128, 128, 128, 0.39);
+    margin-left: 12px;
+}
+main section:nth-child(4) .story{
+    padding: 15px 30px;
+}
+main section:nth-child(4) .story i{
+    font-size: 7.5em;
+    position: absolute;
+    margin-left: 15px;
+    border-radius: 50%;
+    border: 5px solid rgba(128, 128, 128, 0.39);
+}
+main section:nth-child(5) .img-icon a i{
+    margin-bottom: 10px;
+    color: black;
+    font-size: 2em;
+}
+main section:nth-child(5) .img-icon {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 3px solid rgba(128, 128, 128, 0.212);
+}
+main section:nth-child(5) .img-icon .fa-table-cells{
+    color: rgb(114, 114, 114);
+}
+main section:nth-child(6) .pic img{
+    width: 48%;
+}
+main section:nth-child(6) .pic{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+
+
 footer{
+    background-color: rgb(241, 241, 241);
     width: 35%;
     position: fixed;
     bottom: 0px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-top: 3px solid rgba(128, 128, 128, 0.568);
 }
 
 footer a{
     font-size: 3em;
+    color: black;
 }
 
 footer a img{
-    width: 60px;
+    width: 55px;
     border-radius: 50%;
+    margin-top: 6px;
 }
